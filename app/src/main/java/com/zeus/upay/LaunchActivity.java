@@ -30,4 +30,10 @@ public class LaunchActivity extends BaseActivity {
         };
         mHandler.sendEmptyMessageDelayed(1, AppConfig.LAUNCH_TIME);
     }
+
+    @Override
+    protected void onDestroy() {
+        mHandler = null;
+        super.onDestroy();
+    }
 }
