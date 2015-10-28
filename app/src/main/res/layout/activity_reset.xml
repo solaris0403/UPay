@@ -3,30 +3,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <RelativeLayout
+        style="@style/UActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_vertical_height">
+
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置密码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
     <TextView
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_margin="@dimen/activity_vertical_margin"
         android:layout_width="wrap_content"
         android:text="设置登录密码"
         android:layout_height="wrap_content" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:background="@android:color/white"
+        android:layout_height="@dimen/normal_edittext_height"
+        android:orientation="horizontal">
         <EditText
             android:layout_width="0dp"
             android:layout_weight="4"
-            android:layout_height="wrap_content" />
-        <Button
+            android:inputType="phone"
+            android:textColor="@color/default_text_color"
+            android:background="@null"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/normal_text_size"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/display_pw"
+            android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
     </LinearLayout>
     <TextView
+        android:layout_margin="@dimen/activity_vertical_margin"
         android:layout_width="wrap_content"
         android:text="密码格式说明"
+        android:textSize="@dimen/small_text_size"
         android:layout_height="wrap_content" />
     <Button
+        android:textSize="@dimen/normal_text_size"
         android:layout_width="match_parent"
-        android:text="OK"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/sel_btn_login"
         android:id="@+id/btn_set"
         android:layout_height="wrap_content" />
 </LinearLayout>

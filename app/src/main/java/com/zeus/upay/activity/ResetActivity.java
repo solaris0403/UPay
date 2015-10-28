@@ -26,6 +26,7 @@ public class ResetActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 //重新返回登录界面
+
             }
         });
     }

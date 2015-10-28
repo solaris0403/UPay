@@ -1,13 +1,17 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
     <!-- Avatar-->
     <dimen name="avatar_size">72dp</dimen>
     <dimen name="avatar_height_margin">72dp</dimen>
     <!-- TitleBar-->
     <dimen name="titlebar_vertical_height">56dp</dimen>
-
+    <!-- Text-->
     <dimen name="large_text_size">24sp</dimen>
     <dimen name="normal_text_size">18sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <!-- EditText-->
+    <dimen name="normal_edittext_height">48dp</dimen>
+
 </resources>

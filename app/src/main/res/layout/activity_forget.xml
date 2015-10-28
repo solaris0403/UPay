@@ -21,24 +21,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="安全问题"
+            android:text="忘记密码"
             android:textColor="@android:color/white"
             android:textSize="@dimen/large_text_size" />
     </RelativeLayout>
-    <EditText
-        android:layout_margin="8dp"
-        android:id="@+id/edt_mobile"
-        android:layout_width="match_parent"
-        android:layout_height="48dp" />
 
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/normal_edittext_height"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/default_text_color"
+            android:text="手机"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edt_mobile"
+            android:background="@null"
+            android:textSize="@dimen/normal_text_size"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/default_text_color"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <TextView
+        android:layout_margin="@dimen/activity_vertical_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="提示信息" />
 
     <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
         android:id="@+id/btn_next"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/sel_btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next" />
+        android:text="下一步" />
 </LinearLayout>

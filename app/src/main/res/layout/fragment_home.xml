@@ -19,21 +19,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="72dp"
         android:background="@android:color/darker_gray">
 
-        <TextView
+        <Button
             android:layout_width="0dp"
+            android:background="@color/colorPrimary"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:drawableTop="@mipmap/ic_center_focus_strong_white_48dp"
             android:gravity="center"
             android:text="扫一扫" />
 
-        <TextView
+        <Button
+            android:background="@color/colorPrimary"
             android:layout_width="0dp"
+            android:drawableTop="@mipmap/ic_credit_card_white_48dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@android:color/white"
             android:text="付款" />
     </LinearLayout>
 

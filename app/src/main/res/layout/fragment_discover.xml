@@ -16,7 +16,7 @@
             android:layout_alignParentTop="true"
             android:layout_gravity="center"
             android:background="@android:color/transparent"
-            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+            android:src="@mipmap/ic_location_on_white_36dp"></ImageButton>
 
         <TextView
             android:layout_width="wrap_content"

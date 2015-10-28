@@ -31,6 +31,9 @@
             android:name=".activity.AuthenticationActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".activity.ResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait" />
     </application>

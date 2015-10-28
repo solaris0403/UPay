@@ -25,41 +25,82 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/large_text_size" />
     </RelativeLayout>
-    <TextView
-        android:text="安全信息"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
-        android:text="安全信息介绍"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:id="@+id/txt_question"
-        android:text="您宠物的名字"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:layout_width="match_parent"
-        android:id="@+id/edt_answer"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin"
         android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="安全信息"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+
+            android:layout_width="match_parent"
+            android:text="安全信息介绍"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_question"
+            android:text="您宠物的名字:"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/normal_text_size"
+        android:id="@+id/edt_answer"
+        android:gravity="center_vertical"
+        android:text="123"
+        android:layout_height="@dimen/normal_edittext_height" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/normal_edittext_height">
+        <EditText
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
         <Button
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="获取验证码"
-            android:layout_height="wrap_content" />
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@android:color/white"
+            android:background="@drawable/sel_btn_login"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
     <Button
-        android:text="Go on"
+        android:text="确定"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/sel_btn_login"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:id="@+id/btn_goon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
