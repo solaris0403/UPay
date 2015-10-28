@@ -3,11 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <RelativeLayout
+        style="@style/UActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_vertical_height">
 
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="安全问题"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
     <EditText
+        android:layout_margin="8dp"
         android:id="@+id/edt_mobile"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="48dp" />
 
     <TextView
         android:layout_width="match_parent"

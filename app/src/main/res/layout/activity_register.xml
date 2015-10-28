@@ -1,67 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/UActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_vertical_height">
+
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
 
     <LinearLayout
-        android:layout_marginTop="108dp"
-        android:id="@+id/lyt_phone"
+        android:id="@+id/lyt_account"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avatar"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
         <include layout="@layout/view_line" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_width="72dp"
-                android:text="手机号："
-                android:layout_height="wrap_content" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="手机"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:src="@mipmap/display_pw" />
         </LinearLayout>
 
         <include layout="@layout/view_line" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_below="@+id/lyt_phone"
-        android:layout_marginTop="32dp"
-        android:id="@+id/lyt_pwd"
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <include layout="@layout/view_line" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="72dp"
-                android:text="密码："
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <include layout="@layout/view_line" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_below="@+id/lyt_pwd"
-        android:layout_marginTop="32dp"
         android:id="@+id/lyt_verification"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_account"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
         <include layout="@layout/view_line" />
 
         <LinearLayout
@@ -69,15 +115,25 @@
             android:layout_height="56dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <EditText
                 android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/normal_text_size" />
+
             <Button
-                android:layout_weight="1"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/sel_btn_login"
                 android:text="发送验证码"
-                android:layout_height="wrap_content" />
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/normal_text_size" />
 
         </LinearLayout>
 
@@ -86,19 +142,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
+        android:layout_gravity="bottom"
         android:layout_marginBottom="16dp"
-        android:layout_height="wrap_content">
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
-            android:text="同意"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="同意" />
+
         <Button
             android:id="@+id/btn_ok"
             android:layout_width="match_parent"
-            android:text="OK"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_btn_login"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

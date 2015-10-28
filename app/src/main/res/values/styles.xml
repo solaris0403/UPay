@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- ActionBar-->
+    <style name="UActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

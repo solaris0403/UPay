@@ -3,37 +3,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <RelativeLayout
+        style="@style/UActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_vertical_height">
+
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="安全问题"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:text="问题介绍"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/default_text_color"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_marginBottom="8dp"
         android:layout_height="wrap_content" />
     <include
         layout="@layout/view_line"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="48dp">
         <TextView
-            android:text="请选择问题"
+            android:text="请选择问题:"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/default_text_color"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <Button
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
             android:layout_width="0dp"
             android:layout_weight="3"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
     <TextView
+        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:text="答案："
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/default_text_color"
         android:layout_height="wrap_content" />
     <EditText
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="48dp" />
     <Button
         android:id="@+id/btn_ok"
         android:layout_width="match_parent"
-        android:text="OK"
+        android:text="确定"
+        android:layout_margin="8dp"
+        android:background="@drawable/sel_btn_login"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@android:color/white"
+        android:gravity="center"
         android:layout_height="wrap_content" />
 </LinearLayout>

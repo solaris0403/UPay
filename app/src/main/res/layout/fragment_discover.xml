@@ -3,10 +3,129 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+
+    <RelativeLayout
+        style="@style/UActionBar"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="56sp"
-        android:text="DISCOVER"
-        android:layout_height="match_parent" />
+        android:layout_height="@dimen/titlebar_vertical_height">
+
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发现"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:text="广告位"></TextView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:layout_marginTop="16dp">
+
+                <TableRow android:layout_weight="1">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow android:layout_weight="1">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="720dp"
+                android:layout_marginTop="16dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>

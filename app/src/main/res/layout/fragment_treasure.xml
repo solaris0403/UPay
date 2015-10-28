@@ -3,10 +3,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+
+    <RelativeLayout
+        style="@style/UActionBar"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="56sp"
-        android:text="TREASURE"
-        android:layout_height="match_parent" />
+        android:layout_height="@dimen/titlebar_vertical_height">
+
+        <ImageButton
+            android:layout_width="@dimen/titlebar_vertical_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_chevron_left_white_48dp"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="财富"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_light"></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_light"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"></RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="16dp">
+
+                <TableRow android:layout_weight="1">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="股票" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="理财" />
+                </TableRow>
+
+                <TableRow android:layout_weight="1">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="保险" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="投资" />
+                </TableRow>
+
+                <TableRow android:layout_weight="1">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
