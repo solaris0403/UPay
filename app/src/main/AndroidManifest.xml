@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.RegisterActivity"
             android:screenOrientation="portrait" />
@@ -35,6 +36,78 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RichScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelephoneExpensesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LifeExpensesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithdrawalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransportationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OneCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AnalyzeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FinanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InsuranceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CertificateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvestmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FavoritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingsActivity"
             android:screenOrientation="portrait" />
     </application>
 

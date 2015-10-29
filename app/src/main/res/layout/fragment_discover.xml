@@ -10,6 +10,7 @@
         android:layout_height="@dimen/titlebar_vertical_height">
 
         <ImageButton
+            android:id="@+id/btn_location"
             android:layout_width="@dimen/titlebar_vertical_height"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
@@ -52,18 +53,26 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_food"
+                        android:text="美食"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_take_out"
+                        android:text="外卖"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_snack_food"
+                        android:text="休闲食品"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_fast_food"
+                        android:text="快餐"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
                 </TableRow>
@@ -71,18 +80,25 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_overseas"
+                        android:text="海购"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:text="电影"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_movie"
+                        android:text="机酒火车"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_travel_around"
+                        android:text="周边游"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
                 </TableRow>
@@ -99,6 +115,8 @@
                     android:layout_height="112dp"
                     android:orientation="vertical">
                     <Button
+                        android:id="@+id/btn_ad_top"
+                        android:text="天天享优惠"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
@@ -109,11 +127,15 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/btn_ad_left"
+                        android:text="旅游"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/btn_ad_right"
+                        android:text="美食的诱惑"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -123,7 +145,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="720dp"
-                android:layout_marginTop="16dp"></LinearLayout>
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="热卖"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

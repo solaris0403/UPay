@@ -47,7 +47,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_red_light"></RelativeLayout>
+                    android:background="@android:color/holo_red_light">
+                    <Button
+                        android:id="@+id/btn_analyze"
+                        android:layout_width="match_parent"
+                        android:text="资金分析"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -59,13 +65,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@android:color/holo_green_light"></RelativeLayout>
+                        android:background="@android:color/holo_green_light">
+                        <Button
+                            android:id="@+id/btn_bill"
+                            android:layout_width="match_parent"
+                            android:text="账单"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@android:color/darker_gray"></RelativeLayout>
+                        android:background="@android:color/darker_gray">
+                        <Button
+                            android:id="@+id/btn_no"
+                            android:layout_width="match_parent"
+                            android:text="不知道"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -77,11 +95,13 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_stock"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="股票" />
 
                     <Button
+                        android:id="@+id/btn_finance"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="理财" />
@@ -90,11 +110,13 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_insurance"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="保险" />
 
                     <Button
+                        android:id="@+id/btn_invest"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="投资" />
@@ -103,10 +125,12 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:text="..."
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:text="..."
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
                 </TableRow>

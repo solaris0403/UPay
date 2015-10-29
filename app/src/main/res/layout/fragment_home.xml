@@ -8,6 +8,7 @@
         style="@style/UActionBar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/titlebar_vertical_height">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,30 +24,32 @@
         android:background="@android:color/darker_gray">
 
         <Button
+            android:id="@+id/btn_rich_scan"
             android:layout_width="0dp"
-            android:background="@color/colorPrimary"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
             android:drawableTop="@mipmap/ic_center_focus_strong_white_48dp"
             android:gravity="center"
-            android:text="扫一扫" />
+            android:text="扫一扫"
+            android:textColor="@android:color/white" />
 
         <Button
-            android:background="@color/colorPrimary"
+            android:id="@+id/btn_payment_code"
             android:layout_width="0dp"
-            android:drawableTop="@mipmap/ic_credit_card_white_48dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@mipmap/ic_credit_card_white_48dp"
             android:gravity="center"
-            android:textColor="@android:color/white"
-            android:text="付款" />
+            android:text="付款"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <ScrollView
-        android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,47 +63,83 @@
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_transfer"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="转账" />
 
                     <Button
+                        android:id="@+id/btn_telephone_expenses"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="话费、流量" />
 
                     <Button
+                        android:id="@+id/btn_credit_card"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="信用卡" />
+
+                    <Button
+                        android:id="@+id/btn_life_expenses"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="生活缴费" />
                 </TableRow>
 
                 <TableRow android:layout_weight="1">
 
                     <Button
+                        android:id="@+id/btn_withdrawal"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="余额提现" />
+
+                    <Button
+                        android:id="@+id/btn_transportation"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="交通查缴" />
+
+                    <Button
+                        android:id="@+id/btn_one_card"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="一卡通充值" />
 
                     <Button
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
-
-                    <Button
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="..." />
                 </TableRow>
             </TableLayout>
 
             <LinearLayout
-                android:layout_marginTop="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
-                android:background="@android:color/holo_red_dark"></LinearLayout>
-            <LinearLayout
                 android:layout_marginTop="32dp"
-                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_red_dark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="UPay广告" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:background="#125362"
-                android:layout_height="80dp"></LinearLayout>
+                android:layout_height="80dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="32dp"
+                android:background="#125362">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="便民工具" />
+            </LinearLayout>
         </LinearLayout>
-
-
     </ScrollView>
 </LinearLayout>
