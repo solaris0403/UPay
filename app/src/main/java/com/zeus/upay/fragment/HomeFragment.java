@@ -15,7 +15,7 @@ import com.zeus.upay.activity.OneCardActivity;
 import com.zeus.upay.activity.PaymentCodeActivity;
 import com.zeus.upay.activity.RichScanActivity;
 import com.zeus.upay.activity.TelephoneExpensesActivity;
-import com.zeus.upay.activity.TransferActivity;
+import com.zeus.upay.activity.SelectContactActivity;
 import com.zeus.upay.activity.TransportationActivity;
 import com.zeus.upay.activity.WithdrawalActivity;
 import com.zeus.upay.main.BaseFragment;
@@ -80,7 +80,7 @@ public class HomeFragment extends BaseFragment {
                     intent = new Intent(HomeFragment.this.getActivity(), PaymentCodeActivity.class);
                     break;
                 case R.id.btn_transfer:
-                    intent = new Intent(HomeFragment.this.getActivity(), TransferActivity.class);
+                    intent = new Intent(HomeFragment.this.getActivity(), SelectContactActivity.class);
                     break;
                 case R.id.btn_telephone_expenses:
                     intent = new Intent(HomeFragment.this.getActivity(), TelephoneExpensesActivity.class);
